@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- My Comment 0 -->
+<driving_log xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!-- My Comment 000-->
+<!-- My Comment 0001-->
+  <driving_record>
+     <!-- My Comment -->
+	<Date_Time> 2002-05-30T09:30:10.5 </Date_Time>
+	<Driving_Environment> Residential1 </Driving_Environment>
+	<Driving_Skills_Practiced> Night driving </Driving_Skills_Practiced>
+	<!-- My Comment 1-->
+	<Conditions>
+		<Weather>Sun</Weather>
+		<!-- My Comment -->
+		<Roadway>Wet</Roadway>
+	</Conditions>
+	<Driving_Time>
+		<Day> </Day>
+		<Night> </Night>
+	</Driving_Time>	
+  </driving_record>
+  <driving_record>
+	<!-- My Comment 2 -->
+	<Date_Time> 2002-05-30T09:30:10.5 </Date_Time>
+	<Driving_Environment> Residential2 </Driving_Environment>
+	<Driving_Skills_Practiced> Night driving </Driving_Skills_Practiced>
+	<Conditions>
+		<Weather> Sun1</Weather>
+		<!-- My Comment -->
+		<Roadway> Wet1</Roadway>
+	</Conditions>
+	<Driving_Time>
+		<Day> </Day>
+		<Night> </Night>
+	</Driving_Time>	
+  </driving_record>
+  <!-- My Comment 3-->
+</driving_log>  
+<!-- My Comment 4-->

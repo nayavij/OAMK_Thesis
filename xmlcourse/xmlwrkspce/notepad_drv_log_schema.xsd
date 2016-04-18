@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="wisconsin_driving_log">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="driving_record">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Date_Time" type="xs:dateTime" />
+              <xs:element name="Driving_Environment" type="xs:string" />
+              <xs:element name="Driving_Skills_Practiced" type="xs:string" />
+              <xs:element name="Conditions">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Weather" type="xs:string" />
+                    <xs:element name="Roadway" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Driving_Time">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Day" type="xs:time" />
+                    <xs:element name="Night" type="xs:time" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Mentor">
+                <xs:simpleType>
+                  <xs:restriction base="xs:token">
+                    <xs:enumeration value="P"/>
+                    <xs:enumeration value="PD"/>
+                    <xs:enumeration value="QI"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mentor_initials">
+                <xs:simpleType>
+                  <xs:restriction base="xs:token">
+                    <xs:pattern value="[A-Z][A-Z][A-Z]"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Summary">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sub_Totals">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Days" type="xs:positiveInteger"></xs:element>
+                    <xs:element name="Nights" type="xs:positiveInteger"></xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Totals_Hours" type="xs:positiveInteger">
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>          
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

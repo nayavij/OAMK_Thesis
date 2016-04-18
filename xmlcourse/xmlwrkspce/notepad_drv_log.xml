@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wisconsin_driving_log xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="notepad_drv_log_schema.xsd">
+  <driving_record>
+    <Date_Time>2002-05-30T09:30:10.5</Date_Time>
+    <Driving_Environment> Residential </Driving_Environment>
+    <Driving_Skills_Practiced> Night driving </Driving_Skills_Practiced>
+    <Conditions>
+      <Weather> Sun</Weather>
+      <Roadway> Wet</Roadway>
+    </Conditions>
+    <Driving_Time>
+      <Day>09:00:00</Day>
+      <Night>09:00:00</Night>
+    </Driving_Time>
+    <Mentor> PD </Mentor>
+    <Mentor_initials> ABC </Mentor_initials>
+  </driving_record>
+  <driving_record>
+    <Date_Time>2002-05-30T09:30:10.5</Date_Time>
+    <Driving_Environment> Residential </Driving_Environment>
+    <Driving_Skills_Practiced> Night driving </Driving_Skills_Practiced>
+    <Conditions>
+      <Weather> Sun </Weather>
+      <Roadway> Wet </Roadway>
+    </Conditions>
+    <Driving_Time>
+      <Day>09:00:00</Day>
+      <Night>09:00:00</Night>
+    </Driving_Time>
+    <Mentor> PD </Mentor>
+    <Mentor_initials> ABC </Mentor_initials>
+  </driving_record>
+  <Summary>
+    <Sub_Totals>
+      <Days> 4 </Days>
+      <Nights> 5 </Nights>
+    </Sub_Totals>
+    <Totals_Hours> 222 </Totals_Hours>
+  </Summary>
+</wisconsin_driving_log>
+
